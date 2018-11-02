@@ -1,0 +1,49 @@
+.layui-form-hr .form-group{
+    width: 49%;
+    clear: none;
+}
+.layui-form-hr .form-group:nth-of-type(odd){
+    float: left;
+}
+.layui-form-hr .form-group:nth-of-type(even){
+    float: right;
+}
+.layform-action-box{
+    margin-bottom: 10px;
+    padding: 10px 0px 0px 10px;
+    line-height: 22px;
+    border: 5px solid #ddd;
+    border-left: 5px solid #3c8dbc;
+    border-radius: 0 2px 2px 0;
+    /* background-color: #f2f2f2; */
+    overflow: hidden;
+}
+.layui-form-action .layui-form-item{
+    float: left;
+    width: 300px;
+    clear: none;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.layui-form .layui-form-item{
+    margin-bottom: 5px;
+}
+.layui-form .layui-form-item-actions{
+    min-width: auto;
+    margin-bottom: 10px;
+}
+.layui-form{
+    overflow: hidden;
+}
+.layui-form-action .layui-btn+.layui-btn{
+    margin-left: 0px;
+}
+.form-group.form-acitons{
+    margin-top: 10px;
+    width: 100%;
+    border-top: 1px solid #e6e6e6;
+    padding-top: 10px;
+}
+.blockquote-search{
+    padding-bottom: 5px;
+}
