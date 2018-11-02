@@ -5,18 +5,17 @@ yii2-theme-layui,based on [BrotherMa/layuicms2.0](https://github.com/BrotherMa/l
 
 Show time
 ------------
-![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/801.png)
-![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/802.png)
-![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/1.png)
-![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/2.png)
-![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/3.png)
-![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/4.png)
-![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/5.png)
-![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/6.png)
-![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/7.png)
-![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/8.png)
-![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/9.png)
-![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/10.png)
+![](https://github.com/myzero1/show-time/blob/master/yii2-theme-layui/screenshot/101.png)
+![](https://github.com/myzero1/show-time/blob/master/yii2-theme-layui/screenshot/102.png)
+![](https://github.com/myzero1/show-time/blob/master/yii2-theme-layui/screenshot/103.png)
+![](https://github.com/myzero1/show-time/blob/master/yii2-theme-layui/screenshot/104.png)
+![](https://github.com/myzero1/show-time/blob/master/yii2-theme-layui/screenshot/105.png)
+![](https://github.com/myzero1/show-time/blob/master/yii2-theme-layui/screenshot/106.png)
+![](https://github.com/myzero1/show-time/blob/master/yii2-theme-layui/screenshot/107.png)
+![](https://github.com/myzero1/show-time/blob/master/yii2-theme-layui/screenshot/108.png)
+![](https://github.com/myzero1/show-time/blob/master/yii2-theme-layui/screenshot/109.png)
+![](https://github.com/myzero1/show-time/blob/master/yii2-theme-layui/screenshot/110.png)
+![](https://github.com/myzero1/show-time/blob/master/yii2-theme-layui/screenshot/111.png)
 
 Installation
 ------------
