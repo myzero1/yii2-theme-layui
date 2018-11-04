@@ -5,7 +5,7 @@ layui.config({
     var inValidate = false;
     $ = layui.$;
 
-    $('#layer-form-create').on('afterValidateAttribute', function (event, attribute, messages) {
+    $('.z1-layui-form').on('afterValidateAttribute', function (event, attribute, messages) {
         var indexOld = $('#'+attribute.id).attr("layer-index");
         if(messages.length > 0 && !inValidate){
             var msg = '<i class="layui-icon layui-icon-face-cry" style="font-size:30px;color:#dd4b39;display:block;float:left;margin-left:-10px;margin-right: 5px;"></i> '+messages.join(';')
@@ -24,12 +24,12 @@ layui.config({
         }
     });
 
-    $('#layer-form-create').on('beforeValidate', function (event) {
+    $('.z1-layui-form').on('beforeValidate', function (event) {
         inValidate = true;
     });
 
 
-    $('#layer-form-create').on('afterValidate', function (event) {
+    $('.z1-layui-form').on('afterValidate', function (event) {
         inValidate = false;
         var firstObj = $(".form-group.has-error").first().find('.layui-input');
         firstObj.focus();

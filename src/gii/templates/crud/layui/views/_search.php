@@ -28,7 +28,7 @@ use yii\widgets\ActiveForm;
             'method' => 'get',
             'id'=> 'layer-form-' . $this->context->action->id,
             'options' => [
-                'class' => 'layui-form layui-form-pane layui-form-action',
+                'class' => 'z1-layui-form layui-form layui-form-pane layui-form-action',
             ],
             'fieldConfig' => [
                 'options' => ['class' => 'layui-form-item form-group'],
