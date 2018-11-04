@@ -15,7 +15,7 @@ myzero1\layui\assets\php\components\plugins\LayFormAsset::register($this);
     <?php    $form = ActiveForm::begin([
         'id'=> 'layer-form-' . $this->context->action->id,
         'options' => [
-            'class' => 'adminlteiframe-form layui-form layui-form-pane layui-form-hr'
+            'class' => 'z1-layui-form adminlteiframe-form layui-form layui-form-pane layui-form-hr'
         ],
         'fieldConfig' => [
             'options' => ['class' => 'layui-form-item form-group'],
