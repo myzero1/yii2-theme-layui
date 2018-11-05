@@ -162,7 +162,7 @@ foreach ($navs as $key => $value) {
 
 <div id="layui-navs" navs='<?=json_encode($navs, JSON_UNESCAPED_UNICODE)?>'></div>
 <div id="index-bundle" base-url="<?=$bundle->baseUrl?>"></div>
-<div id="notice-url" url="<?=$bundle->noticeUrl?>"></div>
+<div id="notice-url" url="<?=\Yii::$app->params['layuiTheme']['noticeUrl']?>"></div>
 <?php
     echo  Html::beginForm(['/site/logout'], 'post',['id' => 'logout-form'])
     . Html::endForm();
@@ -248,7 +248,7 @@ foreach ($navs as $key => $value) {
                                     <cite>修改密码</cite>
                                 </a>
                             </dd>
-                            <?php if ($bundle->noticeUrl): ?>
+                            <?php if (\Yii::$app->params['layuiTheme']['noticeUrl']): ?>
                             <dd>
                                 <a href="javascript:;" class="showNotice">
                                     <!--
@@ -260,15 +260,21 @@ foreach ($navs as $key => $value) {
                                     <cite>系统公告</cite>
                                     <span class="layui-badge-dot"></span>
                                 </a>
-                            </dd>                            <?php endif ?>
+                            </dd>
+                            <?php endif ?>
+
+                            <?php if (\Yii::$app->params['layuiTheme']['funcSettting']): ?>
                             <dd pc>
                                 <a href="javascript:;" class="functionSetting">
                                     <!-- <i class="layui-icon">&#xe620;</i> -->
                                     <i class="z1iconfont z1icon-set"></i>
                                     <cite>功能设定</cite>
                                     <span class="layui-badge-dot"></span>
-                                    </a>
-                                </dd>
+                                </a>
+                            </dd>
+
+                            <?php endif ?>
+                            <?php if (\Yii::$app->params['layuiTheme']['skin']): ?>
                             <dd pc>
                                 <a href="javascript:;" class="changeSkin">
                                     <!-- <i class="layui-icon">&#xe61b;</i> -->
@@ -276,6 +282,8 @@ foreach ($navs as $key => $value) {
                                     <cite>更换皮肤</cite>
                                 </a>
                             </dd>
+                            <?php endif ?>
+
                             <dd>
                                 <a href="javascript:$('#logout-form').submit();" class="signOut">
                                     <!-- <i class="seraph icon-tuichu"></i> -->
@@ -299,7 +307,7 @@ foreach ($navs as $key => $value) {
             </div>
         </div>
         <!-- 右侧内容 -->
-        <div class="layui-body layui-form" style="bottom: <?=$bundle->copyright ? 44 : 0?>px">
+        <div class="layui-body layui-form" style="bottom: <?=\Yii::$app->params['layuiTheme']['copyright'] ? 44 : 0?>px">
             <div class="layui-tab mag0" lay-filter="bodyTab" id="top_tabs_box">
                 <ul class="layui-tab-title top_tab" id="top_tabs">
                     <li class="layui-this" lay-id="">
@@ -324,7 +332,7 @@ foreach ($navs as $key => $value) {
             </div>
         </div>
         <!-- 底部 -->
-        <?=$bundle->copyright ? sprintf('<div class="layui-footer footer">%s</div>', str_replace('LayoutAssetBundleBaseUrl', $bundle->baseUrl, $bundle->copyright) ) : '' ?>
+        <?=\Yii::$app->params['layuiTheme']['copyright'] ? sprintf('<div class="layui-footer footer">%s</div>', str_replace('LayoutAssetBundleBaseUrl', $bundle->baseUrl, \Yii::$app->params['layuiTheme']['copyright']) ) : '' ?>
     </div>
 
     <!-- 移动导航 -->

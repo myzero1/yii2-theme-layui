@@ -49,7 +49,15 @@ class Module extends \yii\base\Module
         }
 
         if (!isset(\Yii::$app->params['layuiTheme']['copyright'])) {
-            \Yii::$app->params['layuiTheme']['copyright'] = '<p><span>yii2-theme-layui copyright @2018-2038 myzero1</span></p>';
+            \Yii::$app->params['layuiTheme']['copyright'] = '<p><span>copyright @2018-2028 myzero1</span><a href="https://github.com/myzero1/yii2-theme-layui" target="_blank"><img class="layui-nav-img userAvatar" src="LayoutAssetBundleBaseUrl/resources/images/myzero1.jpg" style="margin-left:10px;cursor:pointer;"></a></p>';
+        }
+
+        if (!isset(\Yii::$app->params['layuiTheme']['funcSettting'])) {
+            \Yii::$app->params['layuiTheme']['funcSettting'] = true;
+        }
+
+        if (!isset(\Yii::$app->params['layuiTheme']['skin'])) {
+            \Yii::$app->params['layuiTheme']['skin'] = true;
         }
 
     }
