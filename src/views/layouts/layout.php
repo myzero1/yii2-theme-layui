@@ -218,7 +218,15 @@ foreach ($navs as $key => $value) {
                 <!-- 顶部右侧菜单 -->
                 <ul class="layui-nav top_menu">
                     <li class="layui-nav-item" pc>
-                        <a href="javascript:;" class="clearCache"><i class="layui-icon" data-icon="&#xe640;">&#xe640;</i><cite>清除缓存</cite><span class="layui-badge-dot"></span></a>
+                        <a href="javascript:;" class="clearCache">
+                            <!-- 
+                            <i class="layui-icon" data-icon="&#xe640;">&#xe640;</i>
+                            <cite>清除缓存</cite>
+                            <span class="layui-badge-dot"></span></a>
+                            -->
+                            <i class="z1iconfont z1icon-el-icon-delete2" data-icon="z1iconfont z1icon-el-icon-delete2"></i>
+                            <cite>清除缓存</cite>
+                            <span class="layui-badge-dot" style="margin: -8px 90px 0;"></span></a>
                     </li>
 <!--
                     <li class="layui-nav-item lockcms" pc>
@@ -243,27 +251,35 @@ foreach ($navs as $key => $value) {
                             <?php if ($bundle->noticeUrl): ?>
                             <dd>
                                 <a href="javascript:;" class="showNotice">
+                                    <!--
                                     <i class="layui-icon">&#xe645;</i>
+                                    <cite>系统公告</cite>
+                                    <span class="layui-badge-dot"></span>
+                                    -->
+                                    <i class="z1iconfont z1icon-gonggao"></i>
                                     <cite>系统公告</cite>
                                     <span class="layui-badge-dot"></span>
                                 </a>
                             </dd>                            <?php endif ?>
                             <dd pc>
                                 <a href="javascript:;" class="functionSetting">
-                                    <i class="layui-icon">&#xe620;</i
-                                        <cite>功能设定</cite>
-                                        <span class="layui-badge-dot"></span>
+                                    <!-- <i class="layui-icon">&#xe620;</i> -->
+                                    <i class="z1iconfont z1icon-set"></i>
+                                    <cite>功能设定</cite>
+                                    <span class="layui-badge-dot"></span>
                                     </a>
                                 </dd>
                             <dd pc>
                                 <a href="javascript:;" class="changeSkin">
-                                    <i class="layui-icon">&#xe61b;</i>
+                                    <!-- <i class="layui-icon">&#xe61b;</i> -->
+                                    <i class="z1iconfont z1icon-pifu"></i>
                                     <cite>更换皮肤</cite>
                                 </a>
                             </dd>
                             <dd>
                                 <a href="javascript:$('#logout-form').submit();" class="signOut">
-                                    <i class="seraph icon-tuichu"></i>
+                                    <!-- <i class="seraph icon-tuichu"></i> -->
+                                    <i class="z1iconfont z1icon-guanbi"></i>
                                     <cite>退出</cite>
                                 </a>
                             </dd>

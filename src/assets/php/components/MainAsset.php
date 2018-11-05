@@ -24,7 +24,8 @@ class MainAsset extends AssetBundle
         'resources/css/public.css',
         'resources/css/font_seraph.css',
         'resources/css/custom.css',
-        'http://at.alicdn.com/t/font_899576_31p50u8efv5.css',
+        // 'http://at.alicdn.com/t/font_899576_31p50u8efv5.css',
+        'http://at.alicdn.com/t/font_899576_bjxc1rgmpkv.css',
     ];
 
     public $js = [

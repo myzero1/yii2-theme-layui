@@ -94,9 +94,15 @@ return [
                 'topMenu' => [
                     "menu" => "systemeManagement",
                     "title" => "系统管理",
-                    "icon" => "&#xe620;",
-                    "class" => "layui-icon",
+                    "icon" => "z1iconfont z1icon-set",
+                    "class" => "z1iconfont z1icon-set",
                 ],
+                // 'topMenu' => [
+                //     "menu" => "systemeManagement",
+                //     "title" => "系统管理",
+                //     "icon" => "&#xe620;",
+                //     "class" => "layui-icon",
+                // ],
                 [
                     "title" => "平台公告",
                     "icon" => "&#xe638;",
