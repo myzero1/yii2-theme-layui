@@ -2,7 +2,7 @@
     <div id="nowTime"></div>
 </blockquote>
 <div class="layui-row layui-col-space10 panel_box">
-    <div class="panel layui-col-xs12 layui-col-sm6 layui-col-md4 layui-col-lg2">
+    <div class="panel layui-col-lg4 layui-col-md4">
         <a href="javascript:;" data-url="https://github.com/myzero1/yii2-theme-layui" target="_blank">
             <div class="panel_icon layui-bg-black">
                 <i class="layui-anim seraph icon-github"></i>
@@ -13,7 +13,7 @@
             </div>
         </a>
     </div>
-    <div class="panel layui-col-xs12 layui-col-sm6 layui-col-md4 layui-col-lg2">
+    <div class="panel layui-col-lg4 layui-col-md4">
         <a href="javascript:;" data-url="<?=yii\helpers\Url::to(['doc/icons'])?>">
             <div class="panel_icon layui-bg-cyan">
                 <i class="layui-anim layui-icon" data-icon="&#xe857;">&#xe857;</i>
@@ -25,7 +25,7 @@
             </div>
         </a>
     </div>
-    <div class="panel layui-col-xs12 layui-col-sm6 layui-col-md4 layui-col-lg2">
+    <div class="panel layui-col-lg4 layui-col-md4">
         <a href="javascript:;">
             <div class="panel_icon layui-bg-blue">
                 <i class="layui-anim seraph icon-clock"></i>
@@ -54,7 +54,7 @@
 </blockquote>
 
 <div class="layui-row layui-col-space10">
-    <div class="layui-col-lg6 layui-col-md12">
+    <div class="layui-col-lg12 layui-col-md12">
         <blockquote class="layui-elem-quote title">新加插件<i class="layui-icon layui-red">&#xe756;</i></blockquote>
         <table class="layui-table magt0">
             <colgroup>
