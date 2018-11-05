@@ -156,7 +156,7 @@ return [
         'addMainAssests' => function(){
             // backend\assets\AppAsset::register(\Yii::$app->view);
         },
-        // 'mainUrl' => '/site/main', default z1site/site/main
+        // 'mainUrl' => '/site/main', // default z1site/site/main
         // 'noticeUrl' => false, // defult z1site/site/notice
         // 'funcSettting' => false, // default true
         // 'skin' => false, // default true
