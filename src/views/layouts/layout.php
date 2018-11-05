@@ -219,7 +219,7 @@ foreach ($navs as $key => $value) {
                 <ul class="layui-nav top_menu">
                     <li class="layui-nav-item" pc>
                         <a href="javascript:;" class="clearCache">
-                            <!-- 
+                            <!--
                             <i class="layui-icon" data-icon="&#xe640;">&#xe640;</i>
                             <cite>清除缓存</cite>
                             <span class="layui-badge-dot"></span></a>
@@ -236,18 +236,14 @@ foreach ($navs as $key => $value) {
                     <li class="layui-nav-item" id="userInfo">
                         <a href="javascript:;"><img src="<?=$bundle->baseUrl.'/resources/images/myzero1.jpg'?>" class="layui-nav-img userAvatar" width="35" height="35"><cite class="adminName">myzero1</cite></a>
                         <dl class="layui-nav-child">
+                            <?php foreach (\Yii::$app->params['layuiTheme']['rightNavs'] as $k => $v): ?>
                             <dd>
-                                <a href="javascript:;" data-url="page/user/userInfo.html">
-                                    <i class="seraph icon-ziliao" data-icon="icon-ziliao"></i>
-                                    <cite>个人资料</cite>
+                                <a href="javascript:;" data-url="<?=$v['href']?>">
+                                    <i class="<?=$v['icon']?>"></i>
+                                    <cite><?=$v['title']?></cite>
                                 </a>
                             </dd>
-                            <dd>
-                                <a href="javascript:;" data-url="page/user/changePwd.html">
-                                    <i class="seraph icon-xiugai" data-icon="icon-xiugai"></i>
-                                    <cite>修改密码</cite>
-                                </a>
-                            </dd>
+                            <?php endforeach ?>
                             <?php if (\Yii::$app->params['layuiTheme']['noticeUrl']): ?>
                             <dd>
                                 <a href="javascript:;" class="showNotice">

@@ -60,5 +60,22 @@ class Module extends \yii\base\Module
             \Yii::$app->params['layuiTheme']['skin'] = true;
         }
 
+        if (!isset(\Yii::$app->params['layuiTheme']['rightNavs'])) {
+            \Yii::$app->params['layuiTheme']['rightNavs'] = [
+                [
+                    "title" => "个人资料",
+                    "icon" => "seraph icon-ziliao",
+                    "href" => "/page/user/userInfo.html",
+                    "spread" => false
+                ],
+                [
+                    "title" => "修改密码",
+                    "icon" => "seraph icon-xiugai",
+                    "href" => "page/user/changePwd.html",
+                    "spread" => false
+                ],
+            ];
+        }
+
     }
 }

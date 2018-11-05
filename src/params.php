@@ -136,11 +136,25 @@ return [
                 ],
             ],
         ],
-        // 'mainUrl' => '/site/main',
-        'noticeUrl' => false, // defult z1site/site/notice
-        'funcSettting' => false, // default true
-        'skin' => false, // default true
-        'copyright' => false,// default '<p><span>copyright @2018-2028 myzero1</span><a href="https://github.com/myzero1/yii2-theme-layui" target="_blank"><img class="layui-nav-img userAvatar" src="LayoutAssetBundleBaseUrl/resources/images/myzero1.jpg" style="margin-left:10px;cursor:pointer;"></a></p>'
+        'rightNavs' => [
+            [
+                "title" => "个人资料",
+                "icon" => "seraph icon-ziliao",
+                "href" => "/page/user/userInfo.html",
+                "spread" => false
+            ],
+            [
+                "title" => "修改密码",
+                "icon" => "seraph icon-xiugai",
+                "href" => "page/user/changePwd.html",
+                "spread" => false
+            ],
+        ],
+        // 'mainUrl' => '/site/main', default z1site/site/main
+        // 'noticeUrl' => false, // defult z1site/site/notice
+        // 'funcSettting' => false, // default true
+        // 'skin' => false, // default true
+        // 'copyright' => false,// default '<p><span>copyright @2018-2028 myzero1</span><a href="https://github.com/myzero1/yii2-theme-layui" target="_blank"><img class="layui-nav-img userAvatar" src="LayoutAssetBundleBaseUrl/resources/images/myzero1.jpg" style="margin-left:10px;cursor:pointer;"></a></p>'
 
     ],
 ];
