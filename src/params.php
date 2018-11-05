@@ -155,6 +155,5 @@ return [
         // 'funcSettting' => false, // default true
         // 'skin' => false, // default true
         // 'copyright' => false,// default '<p><span>copyright @2018-2028 myzero1</span><a href="https://github.com/myzero1/yii2-theme-layui" target="_blank"><img class="layui-nav-img userAvatar" src="LayoutAssetBundleBaseUrl/resources/images/myzero1.jpg" style="margin-left:10px;cursor:pointer;"></a></p>'
-
     ],
 ];

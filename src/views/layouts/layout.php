@@ -12,135 +12,161 @@ use common\widgets\Alert;
 
 $bundle = myzero1\layui\assets\php\components\LayoutAsset::register($this);
 
-$navsDefault = [
-    "contentManagement" => [
-        'topMenu' => [
-            "menu" => "contentManagement",
-            "title" => "内容管理",
-            "icon" => "icon-text",
-            "class" => "seraph icon-text",
-        ],
-        [
-            "title" => "文章列表",
-            "icon" => "&#xe63c;",
-            "href" => "/user2",
-            "spread" => false
-        ],
-        [
-            "title" => "图片管理",
-            "icon" => "&#xe634;",
-            "href" => "gii/crud",
-            "spread" => false
-        ],
-        [
-            "title" => "其他页面",
-            "icon" => "&#xe630;",
-            "href" => "",
-            "spread" => false,
-            "children" => [
+$defaultSetting = [
+    'layuiTheme' => [
+        'navs' => [
+            "businessManagement" => [
+                'topMenu' => [
+                    "menu" => "businessManagement",
+                    "title" => "业务管理",
+                    "icon" => "&#xe653;",
+                    "class" => "layui-icon",
+                ],
                 [
-                    "title" => "404页面",
-                    "icon" => "&#xe61c;",
-                    "href" => "gii/controller",
+                    "title" => "业务介绍",
+                    "icon" => "icon-text",
+                    "href" => "/gii/model",
                     "spread" => false
                 ],
                 [
-                    "title" => "登录",
-                    "icon" => "&#xe609;",
-                    "href" => "gii/form",
+                    "title" => "CRUD操作",
+                    "icon" => "icon-xiugai",
+                    "href" => "",
                     "spread" => false,
-                    "target" => "_blank"
+                    "children" => [
+                        [
+                            "title" => "操作初始化",
+                            "icon" => "z1iconfont z1icon-init",
+                            "href" => "/gii/crud",
+                            "spread" => false
+                        ],
+                        [
+                            "title" => "列表页面",
+                            "icon" => "&#xe60a;",
+                            "href" => "/gii/controller",
+                            "spread" => false
+                        ],
+                    ]
+                ],
+                [
+                    "title" => "使用文档",
+                    "icon" => "&#xe705;",
+                    "href" => "",
+                    "spread" => false,
+                    "children" => [
+                        [
+                            "title" => "字体图标",
+                            "icon" => "icon-mokuai",
+                            "href" => "/gii/form",
+                            "spread" => false
+                        ],
+                        [
+                            "title" => "三级联动",
+                            "icon" => "icon-mokuai",
+                            "href" => "/gii/module",
+                            "spread" => false
+                        ],
+                        [
+                            "title" => "bodyTab",
+                            "icon" => "icon-mokuai",
+                            "href" => "/gii/extension",
+                            "spread" => false
+                        ],
+                        [
+                            "title" => "三级菜单",
+                            "icon" => "icon-mokuai",
+                            "href" => "/gii/module",
+                            "spread" => false
+                        ],
+                    ]
+                ],
+            ],
+            "memberCenter" => [
+                'topMenu' => [
+                    "menu" => "memberCenter",
+                    "title" => "用户中心",
+                    "icon" => "icon-icon10",
+                    "class" => "seraph icon-icon10",
+                ],
+                [
+                    "title" => "用户管理",
+                    "icon" => "&#xe66f;",
+                    "href" => "/gii/crud",
+                    "spread" => false
+                ],
+                [
+                    "title" => "角色管理",
+                    "icon" => "&#xe770;",
+                    "href" => "/gii/model",
+                    "spread" => false
                 ]
-            ]
-        ]
+            ],
+            "systemeManagement" => [
+                'topMenu' => [
+                    "menu" => "systemeManagement",
+                    "title" => "系统管理",
+                    "icon" => "z1iconfont z1icon-set",
+                    "class" => "z1iconfont z1icon-set",
+                ],
+                [
+                    "title" => "平台公告",
+                    "icon" => "&#xe638;",
+                    "href" => "/gii/crud",
+                    "spread" => false
+                ],
+                [
+                    "title" => "403页面",
+                    "icon" => "&#xe638;",
+                    "href" => "/gii/controller",
+                    "spread" => false
+                ],
+                [
+                    "title" => "404页面",
+                    "icon" => "&#xe638;",
+                    "href" => "/gii/form",
+                    "spread" => false
+                ],
+                [
+                    "title" => "500页面",
+                    "icon" => "&#xe638;",
+                    "href" => "/gii/module",
+                    "spread" => false
+                ],
+                [
+                    "title" => "登录页面",
+                    "icon" => "&#xe638;",
+                    "href" => "/gii/extension",
+                    "spread" => false,
+                    "target"=> "_blank",
+                ],
+            ],
+        ],
+        'rightNavs' => [
+            [
+                "title" => "个人资料",
+                "icon" => "seraph icon-ziliao",
+                "href" => "/gii/extension",
+                "spread" => false
+            ],
+            [
+                "title" => "修改密码",
+                "icon" => "seraph icon-xiugai",
+                "href" => "/gii/form",
+                "spread" => false
+            ],
+        ],
+        'mainUrl' => '/gii', // default z1site/site/main
+        'noticeUrl' => '/gii/module', // defult z1site/site/notice
+        'funcSettting' => true, // default true
+        'skin' => true, // default true
+        'copyright' => '<p><span>copyright @2018-2028 myzero1</span><a href="https://github.com/myzero1/yii2-theme-layui" target="_blank"><img class="layui-nav-img userAvatar" src="LayoutAssetBundleBaseUrl/resources/images/myzero1.jpg" style="margin-left:10px;cursor:pointer;"></a></p>',
     ],
-    "memberCenter" => [
-        'topMenu' => [
-            "menu" => "memberCenter",
-            "title" => "用户中心",
-            "icon" => "&#xe770;",
-            "class" => "layui-icon",
-        ],
-        [
-            "title" => "用户中心",
-            "icon" => "&#xe66f;",
-            "href" => "gii/module",
-            "spread" => false
-        ],
-        [
-            "title" => "会员等级",
-            "icon" => "icon-vip",
-            "href" => "gii/extension",
-            "spread" => false
-        ]
-    ],
-    "systemeSttings" => [
-        'topMenu' => [
-            "menu" => "systemeSttings",
-            "title" => "系统设置",
-            "icon" => "&#xe620;",
-            "class" => "layui-icon",
-        ],
-        [
-            "title" => "系统基本参数",
-            "icon" => "&#xe631;",
-            "href" => "gii/crud",
-            "spread" => false
-        ],
-        [
-            "title" => "系统日志",
-            "icon" => "icon-log",
-            "href" => "gii/form",
-            "spread" => false
-        ],
-        [
-            "title" => "友情链接",
-            "icon" => "&#xe64c;",
-            "href" => "gii/extension",
-            "spread" => false
-        ],
-        [
-            "title" => "图标管理",
-            "icon" => "&#xe857;",
-            "href" => "gii/module",
-            "spread" => false
-        ]
-    ],
-    "seraphApi" => [
-        'topMenu' => [
-            "menu" => "seraphApi",
-            "title" => "使用文档",
-            "icon" => "&#xe705;",
-            "class" => "layui-icon",
-        ],
-        [
-            "title" => "三级联动模块",
-            "icon" => "icon-mokuai",
-            "href" => "gii/form",
-            "spread" => false
-        ],
-        [
-            "title" => "bodyTab模块",
-            "icon" => "icon-mokuai",
-            "href" => "gii/crud",
-            "spread" => false
-        ],
-        [
-            "title" => "三级菜单",
-            "icon" => "icon-mokuai",
-            "href" => "gii/model",
-            "spread" => false
-        ]
-    ]
 ];
 
-if (isset(\Yii::$app->params['layuiTheme']['navs'])) {
-    $navs = \Yii::$app->params['layuiTheme']['navs'];
-} else {
-    $navs = $navsDefault;
-}
+\Yii::$app->params['layuiTheme'] = array_merge($defaultSetting['layuiTheme'], \Yii::$app->params['layuiTheme']);
 
 $topNavs = [];
+$navs = \Yii::$app->params['layuiTheme']['navs'];
 foreach ($navs as $key => $value) {
     $topNavs[] = $navs[$key]['topMenu'];
     unset($navs[$key]['topMenu']);
