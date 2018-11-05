@@ -167,7 +167,8 @@ $defaultSetting = [
     ],
 ];
 
-\Yii::$app->params['layuiTheme'] = array_merge($defaultSetting['layuiTheme'], \Yii::$app->params['layuiTheme']);
+$layuiTheme = isset(\Yii::$app->params['layuiTheme']) ? \Yii::$app->params['layuiTheme'] : [];
+\Yii::$app->params['layuiTheme'] = array_merge($defaultSetting['layuiTheme'], $layuiTheme);
 
 $topNavs = [];
 $navs = \Yii::$app->params['layuiTheme']['navs'];

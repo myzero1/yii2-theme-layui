@@ -31,7 +31,7 @@ class Module extends \yii\base\Module
         $moduleId = \Yii::$app->params['z1layui']['moduleId'] = $this->id;
 
         $params = require __DIR__ . '/params.php';
-        \Yii::$app->params['layuiTheme'] = $params['layuiTheme'];
+        \Yii::$app->params['layuiTheme'] = isset($params['layuiTheme']) ? $params['layuiTheme'] : [];
 
         $moduleSetting = [
             'layuiTheme' => [
