@@ -14,7 +14,13 @@ class LayoutAsset extends AssetBundle
     public $cssVer = '1.735.1';
     public $mainUrl = '/main';
     public $noticeUrl = '/notice';//false
-    public $copyright = '<p><span>copyright @2018-2028 myzero1</span><a href="https://github.com/myzero1/yii2-theme-layui" target="_blank"><img class="layui-nav-img userAvatar" src="LayoutAssetBundleBaseUrl/resources/images/myzero1.jpg" style="margin-left:10px;cursor:pointer;"></a></p>';//false
+    public $copyright = '
+    <p>
+        <span>copyright @2018-2028 myzero1</span>
+        <a href="https://github.com/myzero1/yii2-theme-layui" target="_blank">
+            <img class="layui-nav-img userAvatar" src="LayoutAssetBundleBaseUrl/resources/images/myzero1.jpg" style="margin-left:10px;cursor:pointer;">
+        </a>
+    </p>';//false
 
     function init(){
         parent::init();

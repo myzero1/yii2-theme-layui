@@ -134,8 +134,8 @@ $navsDefault = [
     ]
 ];
 
-if (isset(\Yii::$app->params['navs'])) {
-    $navs = \Yii::$app->params['navs'];
+if (isset(\Yii::$app->params['layuiTheme']['navs'])) {
+    $navs = \Yii::$app->params['layuiTheme']['navs'];
 } else {
     $navs = $navsDefault;
 }
@@ -220,7 +220,7 @@ foreach ($navs as $key => $value) {
                     <li class="layui-nav-item" pc>
                         <a href="javascript:;" class="clearCache"><i class="layui-icon" data-icon="&#xe640;">&#xe640;</i><cite>清除缓存</cite><span class="layui-badge-dot"></span></a>
                     </li>
-<!-- 
+<!--
                     <li class="layui-nav-item lockcms" pc>
                         <a href="javascript:;"><i class="seraph icon-lock"></i><cite>锁屏</cite></a>
                     </li>
@@ -302,7 +302,7 @@ foreach ($navs as $key => $value) {
                 </ul>
                 <div class="layui-tab-content clildFrame">
                     <div class="layui-tab-item layui-show">
-                        <iframe src="<?=$bundle->mainUrl?>"></iframe>
+                        <iframe src="<?=\Yii::$app->params['layuiTheme']['mainUrl']?>"></iframe>
                     </div>
                 </div>
             </div>
