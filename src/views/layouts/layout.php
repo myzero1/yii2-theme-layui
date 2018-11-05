@@ -10,6 +10,10 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use common\widgets\Alert;
 
+if (isset(\Yii::$app->params['layuiTheme']['addLayoutAssets'])) {
+    \Yii::$app->params['layuiTheme']['addLayoutAssets']();
+}
+
 $bundle = myzero1\layui\assets\php\components\LayoutAsset::register($this);
 
 $defaultSetting = [
