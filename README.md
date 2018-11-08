@@ -25,7 +25,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require-dev myzero1/yii2-theme-layui*
+php composer.phar require-dev myzero1/yii2-theme-layui： *
 ```
 
 or add
@@ -222,7 +222,7 @@ http://localhost/path/to/index.php/gii
     }
     ```
 
-    ![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/1.png)
+    ![](https://github.com/myzero1/show-time/blob/master/yii2-theme-layui/screenshot/102.png)
 
 
 
@@ -236,21 +236,17 @@ http://localhost/path/to/index.php/gii
 
     ```php
 
-    <?php \myzero1\adminlteiframe\assets\php\components\plugins\Select2Asset::register($this); ?>
+    <?php \myzero1\layui\assets\php\components\plugins\EchartsAsset::register($this); ?>
 
     ```
 
     ` Optional plug-in `
 
     ```php
-    \myzero1\adminlteiframe\assets\php\components\plugins\DataRangePickerAsset::register($this);
-    \myzero1\adminlteiframe\assets\php\components\plugins\TableAsset::register($this);
-    \myzero1\adminlteiframe\assets\php\components\plugins\EchartsAsset::register($this);
-    \myzero1\adminlteiframe\assets\php\components\plugins\LayerAsset::register($this);
-    \myzero1\adminlteiframe\assets\php\components\plugins\Select2Asset::register($this);
-    \myzero1\adminlteiframe\assets\php\components\plugins\SwitchAsset::register($this);
-    \myzero1\adminlteiframe\assets\php\components\plugins\Wysihtml5Asset::register($this);
-    \myzero1\adminlteiframe\assets\php\components\plugins\ZtreeAsset::register($this);
+    \myzero1\layui\assets\php\components\plugins\EchartsAsset::register($this);
+    \myzero1\layui\assets\php\components\plugins\SwitchAsset::register($this);
+    \myzero1\layui\assets\php\components\plugins\Wysihtml5Asset::register($this);
+    \myzero1\layui\assets\php\components\plugins\ZtreeAsset::register($this);
     ```
 
 * ` use echart `
@@ -258,7 +254,7 @@ http://localhost/path/to/index.php/gii
     Just add code  as flowlling, in view:
 
     ```
-    <?php myzero1\adminlteiframe\assets\php\components\plugins\EchartsAsset::register($this); ?>
+    <?php myzero1\layui\assets\php\components\plugins\EchartsAsset::register($this); ?>
 
     <div data-provide="z1echarts" id='client-chart' style="width: 100%;height:250px;" data-echarts-config="{title: {text: '折线图基本',left: 'center'}}"></div>
 
@@ -266,44 +262,13 @@ http://localhost/path/to/index.php/gii
 
     ![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/101.png)
 
-*  ` use datarangepicker `
-
-    Just add code  as flowlling, in view:
-
-    ```
-    <?php myzero1\adminlteiframe\assets\php\components\plugins\DataRangePickerAsset::register($this); ?>
-
-    <?php echo $form->field($model, 'date')->textInput(['data-provide' =>"z1datarangepicker",'data-z1datarangepicker-config' => '{singleDatePicker: false}']) ?>
-
-    Or
-
-    <input type="text" name="username" data-provide="z1datarangepicker" data-z1datarangepicker-config="{singleDatePicker: false}" >
-
-    ```
-
-    ![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/201.png)
-
-*  ` use layer `
-
-    Just add code  as flowlling, in view:
-
-    ```
-    <?php myzero1\adminlteiframe\assets\php\components\plugins\LayerAsset::register($this); ?>
-
-    <a href="#" data-provide="z1layer" layer-config='{scrollbar:false,area:["350px","340px"],type:2,title:"联系方式",content:"/site/contact",shadeClose:false}'>联系方式</a>
-
-    <a href="#" data-provide="z1layer" layer-config='{scrollbar:false,area:["350px","80%"],type:2,title:'修改密码",content:"/site/change-pw",shadeClose:false}'>联系方式</a>
-
-    ```
-
-    ![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/301.png)
 
 *  ` use wysihtml5 `
 
     Just add code  as flowlling, in view:
 
     ```
-    <?php myzero1\adminlteiframe\assets\php\components\plugins\Wysihtml5Asset::register($this); ?>
+    <?php myzero1\layui\assets\php\components\plugins\Wysihtml5Asset::register($this); ?>
 
     <textarea data-provide="z1wysihtml5" data-z1wysihtml5-config="{}" rows="10" cols="80"></textarea>
 
@@ -387,42 +352,35 @@ http://localhost/path/to/index.php/gii
     ```
     ![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/504.png)
 
+*  ` use SwitchAsset `
 
-*  ` use select2 `
-
-    Use Single selection,Just add code  as flowlling, in view:
-    ```
-    <?php echo $form->field($model, 'id')->dropDownList(['n1'=>'v1','n2'=>'v2',] ,['data-provide' =>"z1select2"])?>
+    Just add code  as flowlling, in view:
 
     ```
-    ![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/601.png)
+    <?php myzero1\layui\assets\php\components\plugins\SwitchAsset::register($this); ?>
 
-    Use Multi selection,Just add code  as flowlling, in view:
-    ```
-   <?php echo $form->field($model, 'id')->dropDownList(['n1'=>'v1','n2'=>'v2',] ,['data-provide' =>"z1select2", "multiple"=>"multiple"])?>
-    ```
-    ![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/601.png)
+    <?= $form->field($model, 'rememberMe', [
+        'labelOptions' => [
+            'style' => '
+                padding:0;
+            ',
+        ],
+        'options' => [
+            'style' => '
+                width:400px;
+            ',
+        ],
+    ])->checkbox([
+        'id' => 'mywitch',
+        'data-handle-width' => '105',
+        'data-on-color' => 'primary',
+        'data-on-text' => '要记住密码',
+        'data-off-color' => 'info',
+        'data-off-text' => '不记住密码',
+        'data-label-text' => '要记住密码',
+        'checked' => $model->rememberMe == '1' ? true : false,
+    ])->label('') ?>
 
-*  ` use bootsrap-table-fix-column `
+    ```
 
-    Use It,Just add code  as flowlling, in view:
-    ```
-    <table data-provide="z1table" data-z1table-config='{"fixedColumns":true,"subtraction1":100,"subtraction2Selector":[".adminlteiframe-action-box"]}'>
-        <tr>
-            <td>r1c1</td>
-            <td>r1c2</td>
-            <td>r1c3</td>
-        </tr>
-        <tr>
-            <td>r2c1</td>
-            <td>r2c2</td>
-            <td>r2c3</td>
-        </tr>
-        <tr>
-            <td>r3c1</td>
-            <td>r3c2</td>
-            <td>r3c3</td>
-        </tr>
-    </table>
-    ```
-    ![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/1.png)
+    ![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/401.png)
