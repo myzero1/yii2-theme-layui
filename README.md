@@ -260,7 +260,7 @@ http://localhost/path/to/index.php/gii
 
     ```
 
-    ![](https://github.com/myzero1/show-time/blob/master/yii2-theme-adminlteiframe/screenshot/101.png)
+    ![](https://github.com/myzero1/show-time/blob/master/yii2-theme-layui/screenshot/-111.png)
 
 
 *  ` use wysihtml5 `
