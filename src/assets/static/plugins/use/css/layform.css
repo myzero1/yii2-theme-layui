@@ -29,7 +29,7 @@
     margin-bottom: 5px;
 }
 .layui-form .layui-form-item-actions{
-    min-width: auto;
+    width: auto;
     margin-bottom: 10px;
 }
 .layui-form{
