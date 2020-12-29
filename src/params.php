@@ -106,33 +106,33 @@ return [
                 [
                     "title" => "平台公告",
                     "icon" => "&#xe638;",
-                    "href" => "/$moduleId/site/notice",
+                    "href" => "/$moduleId/sys/notice",
                     "spread" => false
                 ],
                 [
                     "title" => "403页面",
                     "icon" => "&#xe638;",
-                    "href" => "/$moduleId/site/e403",
+                    "href" => "/$moduleId/sys/e403",
                     "spread" => false
                 ],
                 [
                     "title" => "404页面",
                     "icon" => "&#xe638;",
-                    "href" => "/$moduleId/site/e404",
+                    "href" => "/$moduleId/sys/e404",
                     "spread" => false
                 ],
                 [
                     "title" => "500页面",
                     "icon" => "&#xe638;",
-                    "href" => "/$moduleId/site/e500",
+                    "href" => "/$moduleId/sys/e500",
                     "spread" => false
                 ],
                 [
                     "title" => "登录页面",
                     "icon" => "&#xe638;",
-                    "href" => "/$moduleId/site/login",
+                    "href" => "/site/login",
                     "spread" => false,
-                    "target"=> "_blank",
+                    "target" => "_blank",
                 ],
             ],
         ],
@@ -150,13 +150,13 @@ return [
                 "spread" => false
             ],
         ],
-        'addLayoutAssets' => function(){
+        'addLayoutAssets' => function () {
             // backend\assets\AppAsset::register(\Yii::$app->view);
         },
-        'addMainAssests' => function(){
+        'addMainAssests' => function () {
             // backend\assets\AppAsset::register(\Yii::$app->view);
         },
-        // 'mainUrl' => '/site/main', // default z1site/site/main
+        'mainUrl' => "/$moduleId/sys/main", // default z1site/site/main
         // 'noticeUrl' => false, // defult z1site/site/notice
         // 'funcSettting' => false, // default true
         // 'skin' => false, // default true
