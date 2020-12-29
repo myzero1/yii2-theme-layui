@@ -132,33 +132,33 @@ class Module extends \yii\base\Module
                         [
                             "title" => "平台公告",
                             "icon" => "&#xe638;",
-                            "href" => "/$moduleId/site/notice",
+                            "href" => "/$moduleId/sys/notice",
                             "spread" => false
                         ],
                         [
                             "title" => "403页面",
                             "icon" => "&#xe638;",
-                            "href" => "/$moduleId/site/e403",
+                            "href" => "/$moduleId/sys/e403",
                             "spread" => false
                         ],
                         [
                             "title" => "404页面",
                             "icon" => "&#xe638;",
-                            "href" => "/$moduleId/site/e404",
+                            "href" => "/$moduleId/sys/e404",
                             "spread" => false
                         ],
                         [
                             "title" => "500页面",
                             "icon" => "&#xe638;",
-                            "href" => "/$moduleId/site/e500",
+                            "href" => "/$moduleId/sys/e500",
                             "spread" => false
                         ],
                         [
                             "title" => "登录页面",
                             "icon" => "&#xe638;",
-                            "href" => "/$moduleId/site/login",
+                            "href" => "/site/login",
                             "spread" => false,
-                            "target"=> "_blank",
+                            "target" => "_blank",
                         ],
                     ],
                 ],
@@ -176,8 +176,8 @@ class Module extends \yii\base\Module
                         "spread" => false
                     ],
                 ],
-                'mainUrl' => $this->id . '/site/main',
-                'noticeUrl' => $this->id . '/site/notice',
+                'mainUrl' => "/$moduleId/sys/main",
+                'noticeUrl' => "/$moduleId/sys/notice",
                 'copyright' => '<p><span>copyright @2018-2028 myzero1</span><a href="https://github.com/myzero1/yii2-theme-layui" target="_blank"><img class="layui-nav-img userAvatar" src="LayoutAssetBundleBaseUrl/resources/images/myzero1.jpg" style="margin-left:10px;cursor:pointer;"></a></p>',
                 'funcSettting' => true,
                 'skin' => true,
@@ -185,6 +185,5 @@ class Module extends \yii\base\Module
         ];
 
         \Yii::$app->params['layuiTheme'] = array_merge($moduleSetting['layuiTheme'], \Yii::$app->params['layuiTheme']);
-
     }
 }
